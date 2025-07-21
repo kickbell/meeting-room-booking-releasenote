@@ -61,7 +61,7 @@
 
 ![image.png](https://uygiaejuijgwotpuiltj.supabase.co/storage/v1/object/public/contents//release_note_110_4.png)
 
-## 1.0.0v 릴리즈 노트
+### 1.0.0v 릴리즈 노트
 
 - 사내 세미나 발표
 - 주요 기능 설명
