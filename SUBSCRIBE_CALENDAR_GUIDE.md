@@ -1,4 +1,4 @@
-회의실 예약 구독하기 가이드 문서
+# 회의실 예약 구독하기 가이드 문서
 
 회의실 예약 프로그램 1.3.0v(2025.08.25)부터 구독하기 기능이 지원됩니다. 구독하기 기능은 [https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/](https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/) 표준을 통해 지원되고 있습니다.
 
