@@ -1,22 +1,21 @@
 # 회의실 예약 구독하기 가이드 문서
 
-회의실 예약 프로그램 1.3.0v(2025.08.25)부터 구독하기 기능이 지원됩니다. 구독하기 기능은 [https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/](https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/) 표준을 통해 지원되고 있습니다.
+회의실 예약 프로그램 1.3.0v(2025.08.26)부터 구독하기 기능이 추가되었습니다. 구독하기 기능은 [iCalendar](https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/) 표준을 통해 지원되고 있습니다. 
 
-> **iCalendar**
->
-> 캘린더 데이터 교환을 위한 제안된 인터넷 표준 (RFC 5545)으로, 1998년 IETF(인터넷 기술 표준화 기구)에 의해 최초 정의되었고 [RFC 5545](https://www.google.com/search?q=https://www.google.com/search%3Fsca_esv%3D9687d88dd609da73%26cs%3D0%26sxsrf%3DAE3TifNWNf2wPvGPq4RDyVWs40c2gyqFGw%253A1756110180585%26q%3DRFC%2B5545%26sa%3DX%26ved%3D2ahUKEwi1g9CbxKWPAxXq5DQHHZI1L1sQxccNegQIAhAC%26mstk%3DAUtExfBOz8GTH5vWpoa9eJ_iqXmPLEAApeSAgZ1msH01oK_JYb5Ndv3f6u_HAeFK4KgGI7D7-kmdFX4VtfFUtggv3p0yOpliPMAzxtq3jbUyxs79Cl3xcAEecK8bFCYaS616_CXjtDoLgDUS-BgQmCymbCrhha-F8EnTO3sJHoMWFQnYTggdg4P02RqOJfo6_EPYQ4DTgoWztAocp24oDBTpATxRbIQ5isaGgGeazIUQI45AliwqDRkMful5-lhz0kexfq0w4zkVfH8JxcNrp4uUqQKr%26csui%3D3)에서 최신으로 업데이트되었습니다. 이 표준은 ".ics" 확장자를 가진 파일의 구조와 내용을 정의하며, 구글 캘린더, 마이크로소프트 아웃룩 등 다양한 캘린더 프로그램에서 사용되어 서로 다른 캘린더 간에 일정을 공유하고 상호 운용성을 높이는 데 기여합니다.
+> **iCalendar**      
+> 캘린더 데이터 교환을 위한 제안된 인터넷 표준으로, 1998년 IETF(인터넷 기술 표준화 기구)에 의해 최초 정의되었고 RFC 5545에서 최신으로 업데이트되었습니다. 이 표준은 ".ics" 확장자를 가진 파일의 구조와 내용을 정의하며, 구글 캘린더, 마이크로소프트 아웃룩 등 다양한 캘린더 프로그램에서 사용되어 서로 다른 캘린더 간에 일정을 공유하고 상호 운용성을 높이는 데 기여합니다.
 
+-----
+
+## iCal 주소 복사하기 
+사용법은 간단합니다. 현재 회의실 예약 시스템 DB의 예약 테이블은 Google Calener API를 통해 INSERT, UPDATE, DELETE 이벤트가 개발자의 Google 계정으로 동기화되고 있습니다. 그리고 Google Calender에서는 공개 iCal 주소를 통해 캘린더 내역을 구독할 수 있는 기능을 제공합니다. iCal 주소를 사용하면 본인이 사용하시는 주 캘린더(네이버 캘린더, MacOS 캘린더, 구글 캘린더)에서도 회의실 예약 내역을 확인하실 수 있어서 서비스의 사용성이 향상되는 효과가 있습니다. 따라서 아래의 공개 iCal 주소를 복사합니다.
+
+**iCal 형식의 공개주소**
 ```jsx
-//iCal 형식의 공개주소
 https://calendar.google.com/calendar/ical/77518f3e2c6ed03625a9af2e568a9933085c799eab415f30b8aae822f44d9e59%40group.calendar.google.com/public/basic.ics
 ```
 
-사용법은 간단합니다. 현재 회의실 예약 시스템은 특정 Google 계정의 Calener API를 통해 예약되는 CREATE, UPDATE, DELETE 이벤트가 동기화되고 있습니다.
-
-![Image 2](https://github.com/user-attachments/assets/7f43cadb-a57f-470f-aec4-dc2f00457b9c)
-
-
-따라서 위에 나와있는 `iCal 형식의 공개주소`만 구독을 해주시면 본인이 사용하시는 주 캘린더(네이버 캘린더, 맥OS 캘린더, 구글 캘린더)에서도 회의실 예약 내역을 확인하실 수 있어서 서비스의 사용성이 향상되는 효과가 있습니다. (단, 보는 것만 가능하며 생성, 삭제, 수정은 여전히 회의실 예약 서비스에서만 가능합니다.)
+> 단, 회의실 예약 데이터의 전체 동기화가 아닌 8월 25일 이후에 생성되는 예약 내역만 확인하실 수 있고, 새로운 예약 생성, 삭제, 수정은 여전히 회의실 예약 서비스에서만 가능합니다.
 
 -----
 
@@ -31,7 +30,7 @@ https://calendar.google.com/calendar/ical/77518f3e2c6ed03625a9af2e568a9933085c79
 
 캘린더 좌측 슬라이드바 - 다른 캘린더 오른쪽에서 + 버튼 - URL로 추가를 눌러줍니다.
 
-![Image 3](https://github.com/user-attachments/assets/11763216-7683-4774-9bdc-42bb99da2caa)
+![Image 3](https://github.com/user-attachments/assets/7b09afee-761e-4418-ad85-80c29426410e)
 
 공유된 iCal 형식의 주소를 입력하고 캘린더 추가 버튼을 눌러줍니다. 끝입니다.
 
