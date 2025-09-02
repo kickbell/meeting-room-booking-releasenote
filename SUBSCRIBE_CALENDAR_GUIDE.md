@@ -23,7 +23,7 @@ https://calendar.google.com/calendar/ical/77518f3e2c6ed03625a9af2e568a9933085c79
 
 ### 구독하기
 
-구글 캘린더는 워낙 범용성이 넓어서 어디든 사용이 가능합니다. 특히 window를 사용하시는 분들께서는 window 기본 캘린더에서 iCal 형식을 아직 지원하지 않고 있기 때문에 사용하시면 좋겠습니다.
+구글 캘린더는 워낙 범용성이 넓어서 어디든 사용이 가능합니다. 특히 Windows를 사용하시는 분들께서는 Windows 기본 캘린더에서 iCal 형식을 아직 지원하지 않고 있기 때문에 사용하시면 좋겠습니다.
 
 ![Image 1](https://github.com/user-attachments/assets/2fd18a35-c7cb-4ad6-8d34-bfea35097605)
 
@@ -84,7 +84,7 @@ MacOS 사용자께서는 기본 캘린더에서 iCal 형식이 지원됩니다. 
 
 ### 구독하기
 
-NAVER를 메인으로 이용하신다면 네이버 캘린더 화면으로 이동합니다. 좌측 사이드바 아래쪽의 구독 캘린더 - 오른쪽 + 버튼 - URL로 구독하기를 클릭합니다.
+네이버 캘린더 화면으로 이동합니다. 좌측 사이드바 아래쪽의 구독 캘린더 - 오른쪽 + 버튼 - URL로 구독하기를 클릭합니다.
 ![Image 14](https://github.com/user-attachments/assets/e895fe72-d566-45b5-8359-c7a7fe10f66a)
 
 
