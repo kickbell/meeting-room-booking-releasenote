@@ -8,7 +8,7 @@
 -----
 
 ## iCal 주소 복사하기 
-사용법은 간단합니다. 현재 회의실 예약 시스템 DB의 예약 테이블은 Google Calener API를 통해 INSERT, UPDATE, DELETE 이벤트가 개발자의 Google 계정으로 동기화되고 있습니다. 그리고 Google Calender에서는 공개 iCal 주소를 통해 캘린더 내역을 구독할 수 있는 기능을 제공합니다. 따라서 아래의 공개 iCal 주소를 복사합니다.
+사용법은 간단합니다. 현재 회의실 예약 시스템 DB의 예약 테이블은 Google Calendar API를 통해 INSERT, UPDATE, DELETE 이벤트가 개발자의 Google 계정으로 동기화되고 있습니다. 그리고 Google Calendar에서는 공개 iCal 주소를 통해 캘린더 내역을 구독할 수 있는 기능을 제공합니다. 따라서 아래의 공개 iCal 주소를 복사합니다.
 
 
 ```jsx
