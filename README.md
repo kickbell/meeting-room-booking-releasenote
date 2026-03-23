@@ -1,5 +1,7 @@
 ## README
-https://meeting-room-booking-nine.vercel.app/ 
+https://meeting-room-booking-nine.vercel.app/                 
+
+jc0518@ksmartech.com / 112233
 
 <img width="1921" height="969" alt="Image" src="https://github.com/user-attachments/assets/3f67ab86-9f35-484f-96f2-771de7eca21d" />
 <img width="1920" height="970" alt="Image" src="https://github.com/user-attachments/assets/f9771569-3669-4c3a-adbc-2057881a2079" />
