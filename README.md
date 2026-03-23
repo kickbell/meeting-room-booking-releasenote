@@ -1,4 +1,7 @@
-# Release Notes
+## ReadMe 
+https://meeting-room-booking-nine.vercel.app/ 
+
+## Release Notes
 > 최근 7일 안에 업데이트가 있었다면, 릴리즈 노트 메뉴 오른쪽에 **🅝**이 표시됩니다.                            
 > 사용성 개선에 도움이 됐거나 아주 기발했던 피드백에는 🤩를 붙여보았습니다.
 
